@@ -1,0 +1,8 @@
+{
+  "/wp-json": {
+    "target": "http://lili-cartomante.infinityfreeapp.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

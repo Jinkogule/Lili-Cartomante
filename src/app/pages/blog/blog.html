@@ -1,0 +1,21 @@
+<div class="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-black text-white py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <h1 class="text-4xl font-bold mb-8 text-center">Blog</h1>
+
+    <p *ngIf="postsError()" class="text-center text-red-300 mb-8">
+      Não foi possível carregar os artigos do blog neste momento.
+    </p>
+
+    <div *ngIf="posts().length; else noPosts" class="grid md:grid-cols-2 gap-6">
+      <article *ngFor="let post of posts(); trackBy: trackByPost" class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10">
+        <h2 class="text-2xl font-semibold text-purple-200 mb-3">{{ post.title }}</h2>
+        <p class="text-gray-300 mb-4">Artigo publicado via Strapi Cloud.</p>
+        <a [routerLink]="['/blog', post.id]" class="text-purple-100 hover:text-white underline">Ler artigo completo</a>
+      </article>
+    </div>
+
+    <ng-template #noPosts>
+      <p *ngIf="!postsError()" class="text-center text-gray-300">Nenhum conteúdo publicado ainda.</p>
+    </ng-template>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<header class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-md border-b border-white/10">
+  <div class="flex justify-between items-center max-w-6xl mx-auto px-6 py-4">
+
+    <!-- LOGO -->
+    <a routerLink="/" class="text-xl md:text-2xl font-bold tracking-wide text-white hover:text-purple-300 transition">
+      🔮 Lili Cartomante
+    </a>
+
+    <!-- MENU -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+
+      <a routerLink="/"
+         routerLinkActive="text-purple-400"
+         class="text-gray-300 hover:text-purple-300 transition">
+        Início
+      </a>
+
+      <a routerLink="/agendamento"
+         routerLinkActive="text-purple-400"
+         class="text-gray-300 hover:text-purple-300 transition">
+        Agendamento
+      </a>
+
+      <a routerLink="/blog"
+         routerLinkActive="text-purple-400"
+         class="text-gray-300 hover:text-purple-300 transition">
+        Blog
+      </a>
+
+      <a routerLink="/sobre-mim"
+         routerLinkActive="text-purple-400"
+         class="text-gray-300 hover:text-purple-300 transition">
+        Sobre mim
+      </a>
+
+      <a routerLink="/contato"
+         routerLinkActive="text-purple-400"
+         class="text-gray-300 hover:text-purple-300 transition">
+        Contato
+      </a>
+
+    </nav>
+
+    <!-- CTA -->
+    <a
+      routerLink="/agendamento"
+      class="hidden md:block bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-lg text-sm font-semibold shadow-lg hover:opacity-90 transition">
+      Agendar
+    </a>
+
+  </div>
+</header>

@@ -1,0 +1,20 @@
+<div class="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-black text-white py-16">
+  <div class="max-w-4xl mx-auto px-6">
+    <a routerLink="/blog" class="text-purple-100 hover:text-white underline mb-6 inline-block">← Voltar ao Blog</a>
+
+    <ng-container *ngIf="loading">
+      <p class="text-gray-300">Carregando...</p>
+    </ng-container>
+
+    <ng-container *ngIf="error">
+      <p class="text-red-300">Não foi possível carregar o artigo. Verifique a publicação no Strapi ou tente novamente mais tarde.</p>
+    </ng-container>
+
+    <ng-container *ngIf="post && !loading && !error">
+      <h1 class="text-4xl font-bold text-purple-200 mb-4">{{ post.title }}</h1>
+      <p *ngIf="post.publishedAt" class="text-xs text-gray-500 mb-4">Publicado em: {{ post.publishedAt | date:'dd/MM/yyyy HH:mm' }}</p>
+      <p *ngIf="!post.content" class="text-gray-300 mb-10">Este artigo ainda não possui conteúdo detalhado. No momento, a estrutura está pronta para receber apenas o título da collection <span class="font-semibold text-purple-200">article</span>.</p>
+      <div *ngIf="post.content" class="text-gray-300 mb-10" [innerHTML]="post.content"></div>
+    </ng-container>
+  </div>
+</div>
