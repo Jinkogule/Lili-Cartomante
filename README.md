@@ -1,59 +1,66 @@
-# LiliCartomante
+# Lili Cartomante - Monorepo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
+Este é um monorepo contendo o frontend e backend do projeto Lili Cartomante.
 
-## Development server
+## Estrutura do Projeto
 
-To start a local development server, run:
-
-```bash
-ng serve
+```
+lili-cartomante/
+├── frontend/          # Angular 21 - Frontend do site
+│   ├── angular.json
+│   ├── netlify.toml   # Configuração do Netlify
+│   ├── package.json
+│   ├── src/
+│   ├── dist/
+│   └── README.md
+│
+├── backend/           # Strapi - Backend para gerenciar artigos
+│   ├── package.json
+│   ├── config/
+│   ├── src/
+│   ├── .env
+│   └── README.md
+│
+└── README.md (este arquivo)
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Como começar
 
-## Code scaffolding
+### Pré-requisitos
+- Node.js 18+
+- npm 10+
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Frontend
 
 ```bash
-ng generate --help
+cd frontend
+npm install
+npm start          # Executa em http://localhost:4200
+npm run build      # Build para produção
 ```
 
-## Building
+**Deploy**: Netlify (automático a cada push em `main`)
 
-To build the project run:
+### Backend
 
 ```bash
-ng build
+cd backend
+npm install
+npm run dev        # Executa em http://localhost:1337
+npm run build      # Build para produção
+npm run deploy     # Deploy no Strapi Cloud
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+**Deploy**: Strapi Cloud
 
-## Running unit tests
+## CI/CD
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Ambos os projetos podem ser deployados independentemente:
+- **Frontend**: Deploy automático no Netlify ao fazer push
+- **Backend**: Deploy manual no Strapi Cloud
 
-```bash
-ng test
-```
+Para mais detalhes, veja os README.md em cada pasta.
 
-## Running end-to-end tests
+## Licença
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[Adicione sua licença aqui]

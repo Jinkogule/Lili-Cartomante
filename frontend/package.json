@@ -1,5 +1,5 @@
 {
-  "name": "lili-cartomante",
+  "name": "frontend",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:lili-cartomante": "node dist/lili-cartomante/server/server.mjs"
+    "serve:ssr:frontend": "node dist/frontend/server/server.mjs"
   },
   "private": true,
   "packageManager": "npm@10.8.2",

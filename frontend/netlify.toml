@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "dist/lili-cartomante/browser"
+  publish = "dist/frontend/browser"
 
 [[redirects]]
   from = "/*"
