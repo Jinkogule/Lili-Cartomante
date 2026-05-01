@@ -32,7 +32,7 @@ interface StrapiCollectionResponse {
 @Injectable({ providedIn: 'root' })
 export class BlogService {
   // URL publica do Strapi Cloud.
-  private baseUrl = 'https://honorable-family-575547a95a.strapiapp.com/api';
+  private baseUrl = 'https://upbeat-hero-72b95d224c.strapiapp.com/api';
   // Deixe vazio se a collection tiver permissao publica de leitura.
   private apiToken = '';
 
