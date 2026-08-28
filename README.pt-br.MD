@@ -7,11 +7,11 @@
 </div>
 
 <p align="center">
-	<a href="#-about-the-project">About the project</a> •
-	<a href="#-development">Development</a> •
-	<a href="#-technologies">Technologies</a> •
-	<a href="#-author">Author</a> •
-	<a href="#-license">License</a>
+	<a href="#-sobre-o-projeto">Sobre o projeto</a> •
+	<a href="#-desenvolvimento">Desenvolvimento</a> •
+	<a href="#-tecnologias">Tecnologias</a> •
+	<a href="#-autor">Autor</a> •
+	<a href="#-licença">Licença</a>
 	<br>
 	<a href="./README.pt-br.MD">Português (BR)</a> •
 	<a href="./README.md">English</a>
@@ -19,17 +19,17 @@
 
 ---
 
-## 💻 About the project
+## 💻 Sobre o projeto
 
-Lili Cartomante's personal website, with information about her work, contact,
-appointments, and blog.
+Site pessoal da Lili Cartomante, com informações sobre seu trabalho, contato,
+agendamento e blog.
 
-## 🧑🏻‍💻 Development
+## 🧑🏻‍💻 Desenvolvimento
 
-- **[Source code](https://github.com/Jinkogule/Lili-Cartomante)**
+- **[Código-fonte](https://github.com/Jinkogule/Lili-Cartomante)**
 - **[Issues](https://github.com/Jinkogule/Lili-Cartomante/issues)**
 
-## 🛠 Technologies
+## 🛠 Tecnologias
 
 ### **Frontend**
 
@@ -44,12 +44,12 @@ appointments, and blog.
 - **[Node.js](https://nodejs.org/)**
 - **[SQLite](https://www.sqlite.org/)**
 
-### **Hosting**
+### **Hospedagem**
 
 - **[Netlify](https://www.netlify.com/)** → Frontend
 - **[Render](https://render.com/)** → Backend
 
-## ✒ Author
+## ✒ Autor
 
 <table>
 	<tr>
@@ -67,7 +67,6 @@ appointments, and blog.
 	</tr>
 </table>
 
-## 📝 License
+## 📝 Licença
 
-This project is licensed under the **[MIT License](./LICENSE)**.
-
+Este projeto está licenciado sob a **[Licença MIT](./LICENSE)**.
