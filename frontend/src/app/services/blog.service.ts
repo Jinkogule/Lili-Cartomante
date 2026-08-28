@@ -31,8 +31,8 @@ interface StrapiCollectionResponse {
 
 @Injectable({ providedIn: 'root' })
 export class BlogService {
-  // URL publica do Strapi Cloud.
-  private baseUrl = 'https://upbeat-hero-72b95d224c.strapiapp.com/api';
+  // URL publica do backend no Render.
+  private baseUrl = 'https://lili-cartomante.onrender.com/api';
   // Deixe vazio se a collection tiver permissao publica de leitura.
   private apiToken = '';
 
