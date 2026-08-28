@@ -25,6 +25,8 @@ types/generated/
 
 # Local uploads and seed artifacts
 public/uploads/
+!public/uploads/
+!public/uploads/.gitkeep
 data/uploads/
 
 # Test and coverage output
